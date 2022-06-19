@@ -2,9 +2,10 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'No license') {
-    return `![badge](https://img.shields.io/badge/license-${license}-blue)`;
-  }
-  else {
+    return `
+  ![badge](https://img.shields.io/badge/license-${license}-blue)
+    `;
+  } else {
     return '';
   }
 }
@@ -25,9 +26,8 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license !== 'No license') {
     return `
-    ## [License](#table-of-contents)
-    The application is covered undedr the follow license: 
-    ${renderLicenseSection(license)}
+    The application is covered under the follow license: 
+    ${renderLicenseLink(license)}
     `;
   }
   else {
@@ -43,14 +43,15 @@ function generateMarkdown(data) {
 
   ${renderLicenseBadge(data.license)}
 
+
   ## Table-of-Contents
 
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  ${renderLicenseLink(data.license)}
-  * [Contributing](#contributing)
-  * [Tests](#tests)
+  * [License](#license)
+  * [Contribution](#contribution)
+  * [Testing](#testing)
   * [Questions](#questions)
 
   ## [Description](#table-of-contents)
@@ -64,7 +65,6 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## [License](#table-of-contents)
-  ${data.license}
   ${renderLicenseSection(data.license)}
 
   ## [Contribution](#table-of-contents)
@@ -75,8 +75,10 @@ function generateMarkdown(data) {
 
   ## [Questions](#table-of-contents)
   To get into contact with me use the follow information below:
-  [Github: ](https://github.com/${data.username})
-  [Email: ](${data.email})
+  <br />
+  [Github: ${data.username}](https://github.com/${data.username}) 
+  <br />
+  [Email: ${data.email}](${data.email}) 
 `;
 }
 
