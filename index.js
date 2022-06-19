@@ -2,20 +2,20 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
-// const util = require('./utils');
+
 
 // mock data
-const mockData = {
-    title: 'concert-finder',
-    description: 'type in an artist to find upcoming events',
-    installation: "No installation required, just type in an artist's name in the search bar",
-    usgae: 'after you get to the website type in a name in the search bar',
-    license: 'mit',
-    contribution: 'Andrew, veronica, arum',
-    testing: 'to do testing you need to just type in an artists name',
-    username: 'DanielCConlon',
-    email: 'test@test.com'
-};
+// const mockData = {
+//     title: 'concert-finder',
+//     description: 'type in an artist to find upcoming events',
+//     installation: "No installation required, just type in an artist's name in the search bar",
+//     usgae: 'after you get to the website type in a name in the search bar',
+//     license: 'mit',
+//     contribution: 'Andrew, veronica, arum',
+//     testing: 'to do testing you need to just type in an artists name',
+//     username: 'DanielCConlon',
+//     email: 'test@test.com'
+// };
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -91,7 +91,7 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: 'Choose a license for your project.',
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense', 'No license'],
+        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
         validate: licenseInput => {
             if (licenseInput) {
                 return true;
@@ -177,33 +177,18 @@ function writeToFile(fileName, data) {
     })
 };
 
-// const createReadMe = util.promisify(writeToFile);
 // TODO: Create a function to initialize app
 function init() {
-    // inquirer
-    // .prompt(questions)
-    // .then(function(userInput) {
-    //     console.log(userInput)
-    //     writeToFile("README.md", generateMarkdown(userInput));
-    // });
+    inquirer
+    .prompt(questions)
+    .then(function(userInput) {
 
-        writeToFile("README.md", generateMarkdown(mockData));
+        writeToFile("README.md", generateMarkdown(userInput));
+    });
+
+        // writeToFile("README.md", generateMarkdown(mockData));
 
 };
-
-// mock data
-// fs.writeFile(generateMarkdown(mockData))
-//     .then(res => {
-//         console.log(res);
-//         return fs.copyFile();
-//     })
-//     .then(res => {
-//         console.log(res);
-//         console.log('All done!');
-//     })
-//     .catch(err => {
-//         console.log(err);
-//     });
 
 
 // Function call to initialize app

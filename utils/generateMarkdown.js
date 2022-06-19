@@ -14,11 +14,12 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== 'No license') {
-    return `![${license}](https://choosealicense.com/licenses/${license})`;
-  }
-  else {
-    return '';
-  }
+    return `
+    [${license}](https://choosealicense.com/licenses/${license})
+      `;
+    } else {
+      return '';
+    }
 }
 
 // TODO: Create a function that returns the license section of README

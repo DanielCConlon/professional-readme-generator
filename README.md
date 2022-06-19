@@ -1,9 +1,9 @@
-# concert-finder
+# Concert-finder
 
-  concert-finder
+  Concert-finder
 
   
-  ![badge](https://img.shields.io/badge/license-mit-blue)
+  ![badge](https://img.shields.io/badge/license-MIT License-blue)
     
 
 
@@ -22,19 +22,21 @@
   type in an artist to find upcoming events
 
   ## [Installation](#table-of-contents)
-  No installation required, just type in an artist's name in the search bar
+  No installationrequired
 
   ## [Usage](#table-of-contents)
-  undefined
+  after you get to the webstie type in a name in the search bar and hit enter it will display upcoming concerts and albums they have worked on
 
   ## [License](#table-of-contents)
   
     The application is covered under the follow license: 
-    ![mit](https://choosealicense.com/licenses/mit)
+    
+    [MIT License](https://choosealicense.com/licenses/MIT License)
+      
     
 
   ## [Contribution](#table-of-contents)
-  Andrew, veronica, arum
+  None at the moment
 
   ## [Testing](#table-of-contents)
   to do testing you need to just type in an artists name
