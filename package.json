@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DanielCConlon/professional-readme-generator/issues"
   },
-  "homepage": "https://github.com/DanielCConlon/professional-readme-generator#readme"
+  "homepage": "https://github.com/DanielCConlon/professional-readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^9.0.0"
+  }
 }

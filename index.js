@@ -41,10 +41,6 @@ const questions = [
     },
 
     {
-        // table of contents
-    },
-
-    {
         // installation
         type: 'input',
         name: 'installation',
@@ -82,7 +78,7 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: 'Choose a license for your project.',
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense', 'No license'],
         validate: licenseInput => {
             if (licenseInput) {
                 return true;
@@ -152,21 +148,6 @@ const questions = [
             }
             else {
                 console.log('Please enter your email.');
-                return false;
-            }
-        }
-    },
-
-    {
-        // questions
-        type: 'input',
-        name: 'questions',
-        message: 'Please leave instructions for those who want to get in contact with you.',
-        validate: questionInput => {
-            if (questionInput) {
-                return true;
-            }
-            else {
                 return false;
             }
         }
