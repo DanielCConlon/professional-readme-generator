@@ -5,17 +5,17 @@ const generateMarkdown = require('./utils/generateMarkdown');
 
 
 // mock data
-// const mockData = {
-//     title: 'concert-finder',
-//     description: 'type in an artist to find upcoming events',
-//     installation: "No installation required, just type in an artist's name in the search bar",
-//     usgae: 'after you get to the website type in a name in the search bar',
-//     license: 'mit',
-//     contribution: 'Andrew, veronica, arum',
-//     testing: 'to do testing you need to just type in an artists name',
-//     username: 'DanielCConlon',
-//     email: 'test@test.com'
-// };
+const mockData = {
+    title: 'concert-finder',
+    description: 'type in an artist to find upcoming events',
+    installation: "No installation required, just type in an artist's name in the search bar",
+    usgae: 'after you get to the website type in a name in the search bar',
+    license: 'No License',
+    contribution: 'Andrew, veronica, arum',
+    testing: 'to do testing you need to just type in an artists name',
+    username: 'DanielCConlon',
+    email: 'test@test.com'
+};
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -91,7 +91,7 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: 'Choose a license for your project.',
-        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense', 'No Liencse'],
         validate: licenseInput => {
             if (licenseInput) {
                 return true;
@@ -179,14 +179,14 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer
-    .prompt(questions)
-    .then(function(userInput) {
+    // inquirer
+    // .prompt(questions)
+    // .then(function(userInput) {
 
-        writeToFile("README.md", generateMarkdown(userInput));
-    });
+    //     writeToFile("./assets/README.md", generateMarkdown(userInput));
+    // });
 
-        // writeToFile("README.md", generateMarkdown(mockData));
+        writeToFile("./assets/Generated-README.md", generateMarkdown(mockData));
 
 };
 
