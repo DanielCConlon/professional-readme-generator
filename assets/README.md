@@ -3,7 +3,7 @@
 
 
   
-  ![badge](https://img.shields.io/badge/license-No License-blue)
+  ![badge](https://img.shields.io/badge/license-MIT License-blue)
     
 
 
@@ -22,24 +22,24 @@
   type in an artist to find upcoming events
 
   ## [Installation](#table-of-contents)
-  No installation required, just type in an artist's name in the search bar
+  NO steps are required to install
 
   ## [Usage](#table-of-contents)
-  undefined
+  after you get to the website type in a name in the search bar
 
   ## [License](#table-of-contents)
   
     The application is covered under the follow license: 
     
-    [No License](https://choosealicense.com/licenses/No License)
+    [MIT License](https://choosealicense.com/licenses/MIT License)
       
     
 
   ## [Contribution](#table-of-contents)
-  Andrew, veronica, arum
+  No others can contribute at this point in time
 
   ## [Testing](#table-of-contents)
-  to do testing you need to just type in an artists name
+  You go to the website and fill our the search bar and get a result
 
   ## [Questions](#table-of-contents)
   To get into contact with me use the follow information below:

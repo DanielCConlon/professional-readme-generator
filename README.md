@@ -1,49 +1,39 @@
-# Concert-finder
+# Professional Readme generator
 
-  Concert-finder
+# Purpose
 
-  
-  ![badge](https://img.shields.io/badge/license-MIT License-blue)
-    
+Create a command-line application that dynamically generates a profressional README.md file from a user's input using inquirer.
 
+# How to use
 
-  ## Table-of-Contents
+To use this application you will need clone it from github and then download the latest version of NPM and inquirer. Once installed you will then go to the command line and type in "node index.js". Then proceed to fill out the free form responses, with the exception of 1 checkbox.
 
-  * [Description](#description)
-  * [Installation](#installation)
-  * [Usage](#usage)
-  * [License](#license)
-  * [Contribution](#contribution)
-  * [Testing](#testing)
-  * [Questions](#questions)
+# Report Issues
 
-  ## [Description](#table-of-contents)
+To report issues open an issue in github.
 
-  type in an artist to find upcoming events
+# Built With
 
-  ## [Installation](#table-of-contents)
-  No installationrequired
+- Javascript
+- Inquirer
+- NPM
 
-  ## [Usage](#table-of-contents)
-  after you get to the webstie type in a name in the search bar and hit enter it will display upcoming concerts and albums they have worked on
+## Image
 
-  ## [License](#table-of-contents)
-  
-    The application is covered under the follow license: 
-    
-    [MIT License](https://choosealicense.com/licenses/MIT License)
-      
-    
+Read me with a badge
+![Website image](./assets/readme%20with%20a%20license.PNG)
 
-  ## [Contribution](#table-of-contents)
-  None at the moment
+Read me without a badge
+![Website image](./assets/readme%20with%20no%20license.PNG)
 
-  ## [Testing](#table-of-contents)
-  to do testing you need to just type in an artists name
+# Website Repo
 
-  ## [Questions](#table-of-contents)
-  To get into contact with me use the follow information below:
-  <br />
-  [Github: DanielCConlon](https://github.com/DanielCConlon) 
-  <br />
-  [Email: test@test.com](test@test.com) 
+https://github.com/DanielCConlon/professional-readme-generator
+
+# GitHub Pages
+
+https://danielcconlon.github.io/professional-readme-generator/
+
+# Video demo
+
+https://watch.screencastify.com/v/amezXdhzBIS5reErPqqr
